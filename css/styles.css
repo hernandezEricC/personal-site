@@ -1,5 +1,33 @@
-/* Global Styles */
 html {
-    background-color: rgb(234, 216, 177);
-    color: rgb(0, 31, 63);
+    background-color: #384B70;
+    color: #FCFAEE;
+    padding: 10px;
+    font-family: monospace;
+}
+
+h1 {
+  border-bottom: 2px solid #B8001F;
+  padding-bottom: 0.5rem;
+}
+
+/* Example of next sibling combinator */
+h2 + p {
+  background-color: #FCFAEE;
+  color: #384B70;
+  padding: 1rem;
+  border-radius: 12px;
+
+}
+
+/* Examples of "user action" psuedo-class */
+a:link {
+  color: #507687;
+}
+
+a:visited {
+  color:#B8001F;
+}
+
+a:hover {
+  text-decoration: none;
 }
