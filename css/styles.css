@@ -3,30 +3,3 @@ html {
     background-color: rgb(234, 216, 177);
     color: rgb(0, 31, 63);
 }
-
-/* Table styling */
-table {
-  /* background-color: rgb(234, 216, 177); */
-  color: rgb(0, 31, 63);
-
-  border-collapse: collapse;
-  border: 2px solid rgb(0, 31, 63);
-  
-  letter-spacing: 1px;
-  font-size: 0.8rem;
-}
-
-thead, tfoot {
-  font-weight: bold;
-}
-
-td, th {
-  border: 1px solid rgb(0, 31, 63);
-  padding: 1px 2px;
-  text-align: center;
-}
-
-caption {
-  padding: 10px;
-}
-/* End Table Styling */
