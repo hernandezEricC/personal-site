@@ -10,12 +10,18 @@ h1 {
   padding-bottom: 0.5rem;
 }
 
-ul {
+/* Example of Group combination with element and class selectors */
+article, .contact-info {
   background-color: #FCFAEE;
   color: #384B70;
   padding: 1rem;
   border: thick solid #507687;
   border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+/* Example of Descendant combination */
+.contact-info > ul {
   list-style: none;
 }
 
@@ -33,20 +39,5 @@ a:hover {
 }
 
 footer {
-  background-color: #FCFAEE;
-  color: #384B70;
-  padding: 1rem;
-  border: thick solid #507687;
-  border-radius: 12px;
   font-weight: bold;
-}
-
-/* Example class selector */
-.article-summary {
-  background-color: #FCFAEE;
-  color: #384B70;
-  padding: 1rem;
-  border: thick solid #507687;
-  border-radius: 12px;
-
 }
