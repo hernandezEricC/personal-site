@@ -11,6 +11,11 @@ h1 {
   letter-spacing: 4px;
 }
 
+h2, h3 {
+  border-bottom: 2px solid #507687;
+  padding-bottom: 0.5rem;
+}
+
 h2, h3, h4 {
   letter-spacing: 4px;
 }
