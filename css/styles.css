@@ -2,12 +2,17 @@ html {
     background-color: #384B70;
     color: #FCFAEE;
     padding: 10px;
-    font-family: monospace;
+    font: 13px monospace, 'Courier New', Courier;
 }
 
 h1 {
   border-bottom: 2px solid #B8001F;
   padding-bottom: 0.5rem;
+  letter-spacing: 4px;
+}
+
+h2, h3, h4 {
+  letter-spacing: 4px;
 }
 
 /* Example of Group combination with element and class selectors */
@@ -23,6 +28,8 @@ article, .contact-info {
 /* Example of Descendant combination */
 .contact-info > ul {
   list-style: none;
+  overflow-x: auto;
+  line-height: 1.5rem;
 }
 
 /* Examples of "user action" psuedo-class */
@@ -34,10 +41,11 @@ a:visited {
   color:#B8001F;
 }
 
-a:hover {
+a:hover, a:focus {
   text-decoration: none;
 }
 
 footer {
   font-weight: bold;
+  text-align: center;
 }
