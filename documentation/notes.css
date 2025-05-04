@@ -1,0 +1,52 @@
+/* Storing old styles here for now */
+h1 {
+    color: #384B70;
+    border-bottom: 2px solid #B8001F;
+    margin-inline: 2rem;
+    padding-bottom: 0.5rem;
+    letter-spacing: 4px;
+}
+
+h2, h3 {
+    border-bottom: 2px solid #507687;
+    padding-bottom: 0.5rem;
+}
+
+h2, h3, h4, ol>li {
+    letter-spacing: 4px;
+}
+
+/* Example of Group combination with element and class selectors */
+article, .contact-info {
+    background-color: #FCFAEE;
+    color: #384B70;
+    padding: 1rem;
+    border: thick solid #507687;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+/* Example of Descendant combination */
+.contact-info > ul {
+    list-style: none;
+    overflow-x: auto;
+    line-height: 1.5rem;
+}
+
+/* Examples of "user action" psuedo-class */
+a:link {
+    color: #507687;
+}
+
+a:visited {
+    color: #B8001F;
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+}
+
+footer {
+    font-weight: bold;
+    text-align: center;
+}

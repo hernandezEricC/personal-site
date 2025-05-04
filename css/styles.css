@@ -5,49 +5,43 @@ html {
     font: 13px monospace, 'Courier New', Courier;
 }
 
-h1 {
-  border-bottom: 2px solid #B8001F;
-  padding-bottom: 0.5rem;
-  letter-spacing: 4px;
-}
-
-h2, h3 {
-  border-bottom: 2px solid #507687;
-  padding-bottom: 0.5rem;
-}
-
-h2, h3, h4 {
-  letter-spacing: 4px;
-}
-
-/* Example of Group combination with element and class selectors */
-article, .contact-info {
+nav {
+  /* 
+    I want to keep the nav bar sticky 
+    but I will also need to adjust the 
+    nav items in reference to window size
+  */
+  /* position: sticky;
+  top: 2px;
+  bottom: 0; */
   background-color: #FCFAEE;
-  color: #384B70;
-  padding: 1rem;
   border: thick solid #507687;
   border-radius: 12px;
   margin-bottom: 10px;
 }
 
-/* Example of Descendant combination */
-.contact-info > ul {
+nav > ol {
   list-style: none;
-  overflow-x: auto;
-  line-height: 1.5rem;
+  color: #384B70;
 }
 
-/* Examples of "user action" psuedo-class */
-a:link {
-  color: #507687;
+/* nav > ol > li[class="title"] {
+  background-color: #384B70;
+} */
+
+nav > ol > li {
+  display: inline-block;
+  border-inline: 1.5px solid #384B70;
+  padding-inline: 1rem;
 }
 
-a:visited {
-  color:#B8001F;
-}
-
-a:hover, a:focus {
-  text-decoration: none;
+article > section, .welcome {
+  background-color: #FCFAEE;
+  border: thick solid #507687;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  padding: 1rem;
+  color: #384B70;
 }
 
 footer {
