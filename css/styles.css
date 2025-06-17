@@ -5,41 +5,60 @@ html {
     font: 13px monospace, 'Courier New', Courier;
 }
 
+.container {
+  background-color: #FCFAEE;
+  border: thick solid #507687;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
 nav {
-  /* 
-    I want to keep the nav bar sticky 
-    but I will also need to adjust the 
-    nav items in reference to window size
-  */
+  /* It would be nice if the navbar was sticky */
   /* position: sticky;
   top: 2px;
   bottom: 0; */
-  background-color: #FCFAEE;
-  border: thick solid #507687;
-  border-radius: 12px;
-  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+
 }
 
-nav > ol {
-  list-style: none;
+.name_title {
+  color: #384B70;
+  flex: 1;
+  margin-right: 5rem;
+}
+
+h1 {
+  border-bottom: #FF9B45 solid 2px;
+  padding-bottom: 1rem;
+}
+
+nav > a {
+  flex: 1;
+  text-decoration: none;
+  outline-color: transparent;
   color: #384B70;
 }
 
-/* nav > ol > li[class="title"] {
-  background-color: #384B70;
-} */
+nav > a:link, a:visited, a:focus {
+  border: solid 2px #507687;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+  background-color: #FCFAEE;
+  margin-right: 10px;
+}
 
-nav > ol > li {
-  display: inline-block;
-  border-inline: 1.5px solid #384B70;
-  padding-inline: 1rem;
+nav > a:hover {
+  background-color: #507687;
+  color: #FCFAEE;
+}
+
+nav > a:active {
+  background-color: #FF9B45;
 }
 
 article > section, .welcome {
-  background-color: #FCFAEE;
-  border: thick solid #507687;
-  border-radius: 12px;
-  margin-bottom: 10px;
   padding: 1rem;
   color: #384B70;
 }
