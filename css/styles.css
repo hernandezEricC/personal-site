@@ -1,8 +1,8 @@
 html {
-    background-color: #384B70;
-    color: #FCFAEE;
-    padding: 10px;
-    font: 13px monospace, 'Courier New', Courier;
+  background-color: #384B70;
+  color: #FCFAEE;
+  padding: 10px;
+  font: 13px monospace, 'Courier New', Courier;
 }
 
 .container {
@@ -13,13 +13,8 @@ html {
 }
 
 nav {
-  /* It would be nice if the navbar was sticky */
-  /* position: sticky;
-  top: 2px;
-  bottom: 0; */
   display: flex;
   align-items: center;
-
 }
 
 .name_title {
@@ -58,9 +53,17 @@ nav > a:active {
   background-color: #FF9B45;
 }
 
-article > section, .welcome {
+h2 {
   padding: 1rem;
   color: #384B70;
+  text-align: center;
+}
+
+.contact-info > ul {
+  color: #384B70;
+  list-style: none;
+  overflow-x: auto;
+  line-height: 1.5rem;
 }
 
 footer {

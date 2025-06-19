@@ -50,3 +50,10 @@ footer {
     font-weight: bold;
     text-align: center;
 }
+
+  /* Used for a sticky nav bar */
+nav {
+  position: sticky;
+  top: 2px;
+  bottom: 0;
+}
