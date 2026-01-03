@@ -1,53 +1,71 @@
 html {
-    background-color: #384B70;
-    color: #FCFAEE;
-    padding: 10px;
-    font: 13px monospace, 'Courier New', Courier;
+  background-color: #384B70;
+  color: #FCFAEE;
+  padding: 10px;
+  font: 13px monospace, 'Courier New', Courier;
 }
 
-h1 {
-  border-bottom: 2px solid #B8001F;
-  padding-bottom: 0.5rem;
-  letter-spacing: 4px;
-}
-
-h2, h3 {
-  border-bottom: 2px solid #507687;
-  padding-bottom: 0.5rem;
-}
-
-h2, h3, h4 {
-  letter-spacing: 4px;
-}
-
-/* Example of Group combination with element and class selectors */
-article, .contact-info {
+.container {
   background-color: #FCFAEE;
-  color: #384B70;
-  padding: 1rem;
   border: thick solid #507687;
   border-radius: 12px;
   margin-bottom: 10px;
+  padding-inline: 1rem;
 }
 
-/* Example of Descendant combination */
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.name_title {
+  color: #384B70;
+  flex: 1;
+  margin-right: 5rem;
+}
+
+h1 {
+  border-bottom: #B8001F solid 2px;
+  padding-bottom: 1rem;
+}
+
+nav > a {
+  flex: 1;
+  text-decoration: none;
+  outline-color: transparent;
+  color: #384B70;
+}
+
+nav > a:link, a:visited, a:focus {
+  border: solid 2px #507687;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+  background-color: #FCFAEE;
+  margin-right: 10px;
+}
+
+nav > a:hover {
+  background-color: #507687;
+  color: #FCFAEE;
+}
+
+nav > a:active {
+  background-color: #B8001F;
+}
+
+h2 {
+  padding: 1rem;
+  color: #384B70;
+  text-align: left;
+  border-bottom: 2px solid #507687;
+}
+
 .contact-info > ul {
+  color: #384B70;
   list-style: none;
   overflow-x: auto;
   line-height: 1.5rem;
-}
-
-/* Examples of "user action" psuedo-class */
-a:link {
-  color: #507687;
-}
-
-a:visited {
-  color:#B8001F;
-}
-
-a:hover, a:focus {
-  text-decoration: none;
 }
 
 footer {
